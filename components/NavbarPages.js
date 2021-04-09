@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const NavbarPages = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.navbar}>
             <h4><Link href="/"><a>home</a></Link></h4>
             <h4><Link href="#"><a>portraits</a></Link></h4>
             <h4><Link href="#"><a>kids</a></Link></h4>

@@ -1,5 +1,4 @@
 import NavbarPages from '../components/NavbarPages'
-import Image from 'next/image'
 import { importPortraits } from '../actions'
 import styles from '../styles/NavbarPages.module.css'
 import ListImages from '../components/ListImages'
@@ -11,13 +10,12 @@ const Portraits = (props) => {
     const alin = () => {
         console.log('clicked')
     }
-    const a = '/../public/portraits/port1.jpg'
     return (
         <div>
             <NavbarPages />
             <div className={styles.imagesContainer}>
                 <ListImages img={portraits}/>
-                
+                <BigImage />
             </div>
         </div>
     );
