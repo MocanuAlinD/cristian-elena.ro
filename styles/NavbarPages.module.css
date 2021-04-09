@@ -1,0 +1,23 @@
+.container{
+    background: #252525;
+    width: 100vw;
+    height: 2.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container h4{
+    /* background: blue; */
+    color: whitesmoke;
+    font-family: 'Poppins';
+    /* font-size: 1.2rem; */
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container h4:first-child{
+    color: lightskyblue;
+}
