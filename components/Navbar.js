@@ -6,7 +6,7 @@ const Navbar = () => {
         <div>
             <ul className={styles.menuList}>
                 <li>
-                    <Link href='#'><a>portraits</a></Link>
+                    <Link href='./portraits'><a>portraits</a></Link>
                 </li>
                 <li>
                     <Link href='#'><a>kids</a></Link>
