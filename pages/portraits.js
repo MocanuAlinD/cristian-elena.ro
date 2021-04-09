@@ -2,7 +2,6 @@ import NavbarPages from '../components/NavbarPages'
 import { importPortraits } from '../actions'
 import styles from '../styles/NavbarPages.module.css'
 import ListImages from '../components/ListImages'
-import BigImage from '../components/BigImage'
 
 
 const Portraits = (props) => {
@@ -15,7 +14,6 @@ const Portraits = (props) => {
             <NavbarPages />
             <div className={styles.imagesContainer}>
                 <ListImages img={portraits}/>
-                <BigImage />
             </div>
         </div>
     );
