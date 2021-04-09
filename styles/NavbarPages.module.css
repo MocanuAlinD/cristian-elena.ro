@@ -46,11 +46,9 @@
     max-height: 90vh;
     display: flex;
     flex-direction: column;
-    background: red;
+    /* background: red; */
     /* overflow-y: scroll ; */
 }
-
-
 
 .bigImage{
     position: fixed;
