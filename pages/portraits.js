@@ -6,9 +6,6 @@ import ListImages from '../components/ListImages'
 
 const Portraits = (props) => {
     const {portraits} = props
-    const alin = () => {
-        console.log('clicked')
-    }
     return (
         <div>
             <NavbarPages />

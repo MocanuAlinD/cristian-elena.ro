@@ -36,8 +36,6 @@
 
 .imagesContainer{
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     z-index: -2;
 }
 
@@ -45,9 +43,11 @@
     margin-left: 10px;
     margin-top: 3rem;
     width: 20vw;
-    height: 100vh;
+    max-height: 90vh;
     display: flex;
     flex-direction: column;
+    background: red;
+    /* overflow-y: scroll ; */
 }
 
 
@@ -57,7 +57,6 @@
     top: 3rem;
     right: 20px;
     left: 22vw;
-    width: 75vw;
 }
 
 .separateImage{

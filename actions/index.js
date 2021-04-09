@@ -18,7 +18,7 @@ export const importFood = () => {
         setTimeout(() => {
             resolve(FOOD)
             // reject('Cannot fetch data.')
-        }, 10)
+        }, 100)
     })
 }
 
@@ -29,6 +29,6 @@ export const importPortraits = () => {
         setTimeout(() => {
             resolve(PORTRAITS)
             // reject('Cannot fetch data.')
-        }, 10)
+        }, 100)
     })
 }
