@@ -9,22 +9,22 @@ const Navbar = () => {
                     <Link href='./portraits'><a>portraits</a></Link>
                 </li>
                 <li>
-                    <Link href='#'><a>kids</a></Link>
+                    <Link href='./kids'><a>kids</a></Link>
                 </li>
                 <li>
-                    <Link href='#'><a>preborn</a></Link>
+                    <Link href='./preborn'><a>preborn</a></Link>
                 </li>
                 <li>
-                    <Link href='#'><a>newborn</a></Link>
+                    <Link href='./newborn'><a>newborn</a></Link>
                 </li>
                 <li>
                     <Link href='./food'><a>food</a></Link>
                 </li>
                 <li>
-                    <Link href='#'><a>city</a></Link>
+                    <Link href='./city'><a>city</a></Link>
                 </li>
                 <li>
-                    <Link href='#'><a>landscape</a></Link>
+                    <Link href='./landscape'><a>landscape</a></Link>
                 </li>
             </ul>
         </div>

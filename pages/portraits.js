@@ -1,18 +1,15 @@
-import NavbarPages from '../components/NavbarPages'
 import { importPortraits } from '../actions'
-import styles from '../styles/NavbarPages.module.css'
+
 import ListImages from '../components/ListImages'
+import Layout from '../components/Layout'
 
 
 const Portraits = (props) => {
     const {portraits} = props
     return (
-        <div>
-            <NavbarPages />
-            <div className={styles.imagesContainer}>
-                <ListImages img={portraits}/>
-            </div>
-        </div>
+        <Layout>
+            <ListImages img={portraits}/>
+        </Layout>
     );
 }
 
