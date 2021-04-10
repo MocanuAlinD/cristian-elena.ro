@@ -22,9 +22,9 @@ const ListImages = (props) => {
                 )}
             </div>
             <div className={styles.bigImage}>
-                <div>
-                    <Image priority src={state.data || '/../public/favicon.ico'} width={state.width} height={state.height} as='image' />
-                    {/* <Image src={tmp} layout="responsive" width={500} height={290} /> */}
+                <div className={styles.insideBig}>
+                    <Image priority layout='responsive' src={state.data || '/../public/favicon.ico'} width={state.width} height={state.height} as='image' />
+                    {/* <img src={props.img[0].url} alt='mocanu'/> */}
                 </div>
             </div>
         </div>

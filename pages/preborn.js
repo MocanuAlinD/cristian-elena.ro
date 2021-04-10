@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 const Preborn = (props) => {
     const { preborn } = props
     return (
-        <Layout>
+        <Layout home>
             <ListImages img={preborn} />
         </Layout>
     );

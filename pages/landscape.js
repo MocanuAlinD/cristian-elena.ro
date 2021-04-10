@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 const Landscape = (props) => {
     const { land } = props
     return (
-        <Layout>
+        <Layout home>
             <ListImages img={land} />
         </Layout>
     );

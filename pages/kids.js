@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 const Kids = (props) => {
     const { kids } = props
     return (
-        <Layout>
+        <Layout home>
             <ListImages img={kids} />
         </Layout>
     );

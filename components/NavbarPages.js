@@ -1,7 +1,7 @@
 import styles from '../styles/NavbarPages.module.css'
 import Link from 'next/link'
 
-const NavbarPages = () => {
+const NavbarPages = (props) => {
     return (
         <div className={styles.navbar}>
             <h4><Link href="/"><a>home</a></Link></h4>
