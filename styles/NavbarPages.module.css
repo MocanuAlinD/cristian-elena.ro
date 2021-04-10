@@ -50,6 +50,11 @@
     /* overflow-y: scroll ; */
 }
 
+.separateImage{
+    margin-bottom: 0.10rem;
+    cursor: pointer;
+}
+
 .bigImage{
     position: fixed;
     top: 3rem;
@@ -57,7 +62,11 @@
     left: 22vw;
 }
 
-.separateImage{
-    margin-bottom: 0.10rem;
-    cursor: pointer;
+.insideBig{
+    position: relative;
+    /* background: red; */
+    height: 90vh;
+    width: 100%;
+    object-fit: contain;
 }
+

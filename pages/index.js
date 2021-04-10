@@ -16,7 +16,6 @@ export default function Home() {
               rel="stylesheet" />
             <script src="https://kit.fontawesome.com/cbb96f47ca.js" crossorigin="anonymous"></script>
         </Head>
-          <h1 className={styles.title}>Cristian Elena</h1>
           <Navbar />
           <Footer />
       </div>

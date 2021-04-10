@@ -12,85 +12,58 @@
   overflow: hidden;
 }
 
-
-.menuList{
-  list-style: none;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
+/* tot meniul de sus, title si navbar */
+.entireMenu{
   height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: absolute;
-  top: 33%;
-  right: 1%;
-  background: chocolate;
-  background: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.menuList li{
-  /* background: blue; */
-  color: whitesmoke;
-  filter: blur(1px);
-  padding: 0 20px;
-  font-size: 1.6rem;
-  /* font-weight: 500; */
-  transition: all 350ms ease-in-out;
-  font-family: 'Poppins';
-}
-
-.menuList li:hover{
-  filter: blur(0px);
-}
-
-.title {
+/* title- Cristian Elena */
+.title h1{
   color: whitesmoke;
   font-size: 5rem;
-  position: absolute;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  top: 7%;
-  right: 1%;
   padding: 0 10px;
+  /* background: blue; */
+  margin-right: 13px;
+  margin-top: 41px;
 }
 
-.btn a {
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-}
-
-.navbar {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
+/* ul */
+.menuList{
+  list-style: none;
   height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  position: absolute;
-  top: 33%;
-  right: 1%;
-  background: chocolate;
-  background: none;
+  margin-right: 11px;
+  margin-top: -18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.menuList li a{
+  color: whitesmoke;
+  padding: 3px 9px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  filter: blur(1px);
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+
+.menuList li a:hover{
+  filter: blur(0px);
+  opacity: 1;
+  margin: 0 10px;
 }
 
 .bottom_div {
@@ -113,14 +86,10 @@
   left: 1%;
 }
 
-
-
-
 .shop{
-   /* background: red; */
    color: whitesmoke;
    width: fit-content;
-   font-size: 1.5rem;
+   font-size: 1.1rem;
    height: 100%;
    display: flex;
    justify-content: space-around;
@@ -130,22 +99,55 @@
 
 .shop:first-child{
   padding-right: 1.7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
 
 
 .shop .linkIcon{
    color: #00b140;
-   /* background: blue; */
-   width: 3rem;
+   width: 2rem;
    height: 100%;
-   font-size: 1.6rem;
    padding-right: 10px;
  }
 
- .lnk a{
-   font-size: 100%;
- }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,6 +157,7 @@
   .elena {
     display: none;
   }
+
   .social {
     position: absolute;
     width: -webkit-fit-content;
