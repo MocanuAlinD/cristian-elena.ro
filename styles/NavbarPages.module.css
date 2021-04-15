@@ -1,14 +1,3 @@
-/* .container{
-    background: #252525;
-    width: 100vw;
-    height: 2.3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    background: red;
-} */
-
 .navbar{
     background: #252525;
     width: 100vw;
@@ -21,16 +10,23 @@
     z-index: 2;
 }
 
-.navbar h4{
-    color: whitesmoke;
-    font-family: 'Poppins';
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.navbar a{
+    text-decoration: none;
+    color: #ffffff80;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    transition: all .35s ease-in-out;
 }
 
-.navbar h4:first-child{
+.navbar a:hover{
+    color: whitesmoke;
+}
+
+
+.navbar h4:first-child a{
     color: lightskyblue;
 }
 
@@ -47,8 +43,6 @@
     max-width: 200px;
     display: flex;
     flex-direction: column;
-    /* background: red; */
-    /* overflow-y: scroll ; */
 }
 
 .separateImage{
@@ -61,21 +55,5 @@
     top: 3rem;
     right: 20px;
     left: 22vw;
-    /* background: blue; */
-}
-
-.insideBig{
-    position: relative;
-    background: red;
-    height: 90vh;
-    width: 100%;
-    object-fit: contain;
-    background-image: url('../public/portraits/port1.jpg');
-    background-position-x: center;
-    background-position-y: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-origin: content-box;
-    overflow: hidden;
 }
 
