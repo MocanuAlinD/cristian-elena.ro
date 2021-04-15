@@ -12,6 +12,9 @@ const ListImages = (props) => {
         setState({ data: a, width: b, height: c })
     }
     const { img } = props
+    const split_1 = state.data.split('/')
+    const join_1 = "/" + split_1.slice(3,).join('/')
+    console.log(join_1)
     return (
         <div className={styles.imagesContainer}>
             <div className={styles.inside}>
@@ -22,11 +25,13 @@ const ListImages = (props) => {
                 )}
             </div>
             <div className={styles.bigImage}>
-                <div className={styles.insideBig}>
-                    <Image priority layout='intrinsic' src={state.data || '/../public/favicon.ico'} width={state.width} height={state.height} as='image' />
-                    {/* <img src={props.img[0].url} alt='mocanu'/> */}
+                <div className="insideBg" style={{
+                    width: "100%", height: "90vh", backgroundImage: `url(${join_1})`, backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat', backgroundOrigin: "content-box"}}>
                 </div>
             </div>
+            
         </div>
     );
 }
