@@ -15,5 +15,5 @@ const NavbarPages = (props) => {
         </div>
     );
 }
- 
+
 export default NavbarPages;
