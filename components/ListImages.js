@@ -7,14 +7,14 @@ import { useState } from 'react'
 const ListImages = (props) => {
     const [state, setState] = useState({ data: props.img[0].url, width: props.img[0].width, height: props.img[0].height })
     // const [state, setState] = useState({ data: '', width: '600', height: '400' })
-    const changeState = (a, b, c) => {
-        // console.log('Change state: ', a, b, c)
-        setState({ data: a, width: b, height: c })
+    const changeState = (a,b,c) => {
+        // console.log('Change state: ', a,b,c)
+        setState({ data: a, width: b, height: c})
     }
     const { img } = props
     const split_1 = state.data.split('/')
     const join_1 = "/" + split_1.slice(3,).join('/')
-    console.log(join_1)
+    // console.log(join_1)
     return (
         <div className={styles.imagesContainer}>
             <div className={styles.inside}>
@@ -27,8 +27,7 @@ const ListImages = (props) => {
             <div className={styles.bigImage}>
                 <div className="insideBg" style={{
                     width: "100%", height: "90vh", backgroundImage: `url(${join_1})`, backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'no-repeat', backgroundOrigin: "content-box"}}>
+                    backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundOrigin: "content-box"}}>
                 </div>
             </div>
             

@@ -39,21 +39,29 @@
     margin-left: 10px;
     margin-top: 3rem;
     width: 20vw;
-    max-height: 90vh;
+    height: 100%;
     max-width: 200px;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
 .separateImage{
-    margin-bottom: 0.10rem;
     cursor: pointer;
+    margin: 5px;
+    transition: .35s ease-in-out;
+    background: #252525;
+}
+.separateImage:hover{
+    background: whitesmoke;
+    margin-bottom: 5px;
+    transform: translateX(15px);
 }
 
 .bigImage{
     position: fixed;
     top: 3rem;
     right: 20px;
-    left: 22vw;
+    left: 220px;
 }
-
