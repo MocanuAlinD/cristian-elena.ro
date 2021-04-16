@@ -14,7 +14,7 @@ const ListImages = (props) => {
     const { img } = props
     const split_1 = state.data.split('/')
     const join_1 = "/" + split_1.slice(3,).join('/')
-    console.log(state.data)
+    // console.log(state.data)
     return (
         <div className={styles.imagesContainer}>
             <div className={styles.inside}>
