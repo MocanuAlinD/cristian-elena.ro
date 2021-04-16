@@ -7,6 +7,14 @@ const Navbar = () => {
             <div className={styles.title}>
                 <h1>Cristian Elena</h1>
             </div>
+            <div className={styles.brandTitle}>
+                <h4>cristian-elena.ro</h4>
+            </div>
+            <div className={styles.toggleButton}>
+                <div className={styles.line1}></div>
+                <div className={styles.line2}></div>
+                <div className={styles.line3}></div>
+            </div>
             <div>
                 <ul className={styles.menuList}>
                     <li>
@@ -37,3 +45,9 @@ const Navbar = () => {
 }
  
 export default Navbar;
+
+/*
+ul-li - menuList
+
+
+*/
