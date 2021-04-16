@@ -86,13 +86,13 @@ const NEWBORN = [
     { id: 'nb-8', url: '/new-born/nb8.jpg', width: '2000', height: '1335' },
     { id: 'nb-9', url: '/new-born/nb9.jpg', width: '2000', height: '1335' },
     { id: 'nb-10', url: '/new-born/nb10.jpg', width: '2000', height: '1335' },
-    { id: 'nb-11', url: '/new-born/nb10.jpg', width: '2000', height: '1335' },
-    { id: 'nb-12', url: '/new-born/nb10.jpg', width: '2000', height: '1335' },
-    { id: 'nb-13', url: '/new-born/nb10.jpg', width: '2000', height: '1335' },
-    { id: 'nb-14', url: '/new-born/nb10.jpg', width: '2000', height: '1335' },
-    { id: 'nb-15', url: '/new-born/nb10.jpg', width: '2000', height: '1335' },
-    { id: 'nb-16', url: '/new-born/nb10.jpg', width: '2000', height: '1335' },
-    { id: 'nb-17', url: '/new-born/nb10.jpg', width: '2000', height: '1129' },
+    { id: 'nb-11', url: '/new-born/nb11.jpg', width: '2000', height: '1335' },
+    { id: 'nb-12', url: '/new-born/nb12.jpg', width: '2000', height: '1335' },
+    { id: 'nb-13', url: '/new-born/nb13.jpg', width: '2000', height: '1335' },
+    { id: 'nb-14', url: '/new-born/nb14.jpg', width: '2000', height: '1335' },
+    { id: 'nb-15', url: '/new-born/nb15.jpg', width: '2000', height: '1335' },
+    { id: 'nb-16', url: '/new-born/nb16.jpg', width: '2000', height: '1335' },
+    { id: 'nb-17', url: '/new-born/nb17.jpg', width: '2000', height: '1129' },
 ]
 
 
