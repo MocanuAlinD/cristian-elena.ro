@@ -14,7 +14,7 @@ const ListImages = (props) => {
     const { img } = props
     const split_1 = state.data.split('/')
     const join_1 = "/" + split_1.slice(3,).join('/')
-    // console.log(join_1)
+    console.log(state.data)
     return (
         <div className={styles.imagesContainer}>
             <div className={styles.inside}>
@@ -26,7 +26,7 @@ const ListImages = (props) => {
             </div>
             <div className={styles.bigImage}>
                 <div className="insideBg" style={{
-                    width: "100%", height: "90vh", backgroundImage: `url(${join_1})`, backgroundPosition: 'center',
+                    width: "100%", height: "90vh", backgroundImage: `url(${state.data})`, backgroundPosition: 'center',
                     backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundOrigin: "content-box"}}>
                 </div>
             </div>
