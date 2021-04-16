@@ -6,11 +6,11 @@ const PORTRAITS = [
     { id: 'pt-5', url: '/../public/portraits/port5.jpg', width: '2000', height: '1331' },
     { id: 'pt-6', url: '/../public/portraits/port6.jpg', width: '2000', height: '1331' },
     { id: 'pt-7', url: '/../public/portraits/port7.jpg', width: '2000', height: '1123' },
-    { id: 'pt-8', url: '/../public/portraits/port8.jpg', width: '2000', height: '1316' },]
-    // { id: 'pt-9', url: '/../public/portraits/port9.jpg', width: '2000', height: '1331' },
-    // { id: 'pt-10', url: '/../public/portraits/port10.jpg', width: '2000', height: '1375' },
-    // { id: 'pt-11', url: '/../public/portraits/port11.jpg', width: '2000', height: '1331' },
-    // { id: 'pt-12', url: '/../public/portraits/port12.jpg', width: '2000', height: '1237' },
+    { id: 'pt-8', url: '/../public/portraits/port8.jpg', width: '2000', height: '1316' },
+    { id: 'pt-9', url: '/../public/portraits/port9.jpg', width: '2000', height: '1331' },
+    { id: 'pt-10', url: '/../public/portraits/port10.jpg', width: '2000', height: '1375' },
+    { id: 'pt-11', url: '/../public/portraits/port11.jpg', width: '2000', height: '1331' },
+    { id: 'pt-12', url: '/../public/portraits/port12.jpg', width: '2000', height: '1237' },]
     // { id: 'pt-13', url: '/../public/portraits/port13.jpg', width: '2000', height: '1331' },
     // { id: 'pt-14', url: '/../public/portraits/port14.jpg', width: '2000', height: '1379' },
     // { id: 'pt-15', url: '/../public/portraits/port15.jpg', width: '2000', height: '1160' },
