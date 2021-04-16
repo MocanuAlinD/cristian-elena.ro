@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 
 const Portraits = (props) => {
     const {portraits} = props
-    // console.log('Portraits home: ',props)
     return (
         <Layout home>
             <ListImages img={portraits}/>

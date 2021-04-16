@@ -175,31 +175,25 @@ const LANDSCAPE = [
 
 export const importPortraits = () => {
     return new Promise((resolve, reject) => {
-        // first arg is a function, second arg is the time
         setTimeout(() => {
             resolve(PORTRAITS)
-            // reject('Cannot fetch data.')
-        }, 100)
+        }, 50)
     })
 }
 
 export const importKids = () => {
     return new Promise((resolve, reject) => {
-        // first arg is a function, second arg is the time
         setTimeout(() => {
             resolve(KIDS)
-            // reject('Cannot fetch data.')
-        }, 100)
+        }, 50)
     })
 }
 
 export const importPreborn = () => {
     return new Promise((resolve, reject) => {
-        // first arg is a function, second arg is the time
         setTimeout(() => {
             resolve(PREBORN)
-            // reject('Cannot fetch data.')
-        }, 100)
+        }, 50)
     })
 }
 
@@ -208,39 +202,32 @@ export const importNewborn = () => {
         // first arg is a function, second arg is the time
         setTimeout(() => {
             resolve(NEWBORN)
-            // reject('Cannot fetch data.')
-        }, 100)
+        }, 50)
     })
 }
 
 export const importFood = () => {
     return new Promise((resolve, reject) => {
-        // first arg is a function, second arg is the time
         setTimeout(() => {
             resolve(FOOD)
-            // reject('Cannot fetch data.')
-        }, 100)
+        }, 50)
     })
 }
 
 export const importCity = () => {
     return new Promise((resolve, reject) => {
-        // first arg is a function, second arg is the time
         setTimeout(() => {
             resolve(CITY)
-            // reject('Cannot fetch data.')
-        }, 100)
+        }, 50)
     })
 }
 
 
 export const importLandscape = () => {
     return new Promise((resolve, reject) => {
-        // first arg is a function, second arg is the time
         setTimeout(() => {
             resolve(LANDSCAPE)
-            // reject('Cannot fetch data.')
-        }, 100)
+        }, 50)
     })
 }
 

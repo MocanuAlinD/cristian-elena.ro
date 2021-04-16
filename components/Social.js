@@ -28,24 +28,3 @@ const Social = () => {
 }
  
 export default Social;
-
-
-
-{/* <div className={style.social}>
-    <div className="icon facebook">
-        <div className="tooltip">Facebook</div>
-        <a href="https://facebook.com/fotograf.elenamusat" target="_blank"><FaFacebook /></a>
-    </div>
-    <div className="icon instagram">
-        <div className="tooltip">Instagram</div>
-        <a href="https://instagram.com/musatelena" target="_blank"><GrInstagram /></a>
-    </div>
-    <div className="icon phone">
-        <div className="tooltip">0727.156.830</div>
-        <a href="tel:0727156830"><FaMobile /></a>
-    </div>
-    <div className="icon mail">
-        <div className="tooltip">elena_musat88@yahoo.com</div>
-        <a href="mailto:elena_musat88@yahoo.com"><FiMail /></a>
-    </div>
-</div> */}
