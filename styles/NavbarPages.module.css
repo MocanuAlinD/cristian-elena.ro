@@ -26,7 +26,7 @@
 }
 
 
-.navbar h4:first-child a{
+.navbar h4:last-child a{
     color: lightskyblue;
 }
 
@@ -105,9 +105,9 @@
     }
 
 
-    .navbar h4:first-child a{
+    /* .navbar h4:last-child a{
         color: lightskyblue;
-    }
+    } */
 
     .imagesContainer{
         display: block;
