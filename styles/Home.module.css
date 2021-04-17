@@ -183,6 +183,7 @@
     width: 100%;
     height: fit-content;
     display: flex;
+    /* background: red; */
   }
 
   .brandTitle{
@@ -199,8 +200,9 @@
     font-weight: 200;
     height: fit-content;
     /* background: violet; */
-    margin: auto auto;
-    letter-spacing: 0.3rem;
+    margin: auto 20px 0px;
+    letter-spacing: 0;
+    width: fit-content;
   }
 
   /* nav bar burger in jos*/
