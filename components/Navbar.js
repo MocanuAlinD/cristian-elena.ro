@@ -22,11 +22,6 @@ class Navbar extends Component {
                 <div className={styles.brandTitle}>
                     <h4>cristian-elena.ro</h4>
                 </div>
-                <div className={styles.toggleButton}>
-                    <div className={styles.line1}></div>
-                    <div className={styles.line2}></div>
-                    <div className={styles.line3}></div>
-                </div>
                 <div>
                     <ul className={this.state.active ? styles.menuListActive : styles.menuListInactive}>
                         <li>

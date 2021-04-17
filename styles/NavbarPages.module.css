@@ -1,9 +1,3 @@
-/* .containerMare{
-    background: red;
-    width: 100%;
-    height: 100%;
-} */
-
 .entireNavbar{
     position: fixed;
     top: 0;
@@ -14,10 +8,19 @@
     align-items: center;
     background: #252525aa;
     z-index: 2;
-    background: red;
 }
 
-.navbar{
+.pageTitleActive{
+    color: whitesmoke;
+    display: none;
+}
+
+.pageTitleInactive{
+    color: whitesmoke;
+    display: none;
+}
+
+.navbarActive{
     width: 100%;
     height: 100%;
     display: flex;
@@ -25,19 +28,8 @@
     align-items: center;
     flex-wrap: wrap;
 }
-/* .navbar{
-    background: #252525;
-    width: 100vw;
-    height: 2.3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    position: fixed;
-    z-index: 2;
-} */
 
-.navbar a{
+.navbarActive a{
     text-decoration: none;
     color: #ffffff80;
     text-transform: uppercase;
@@ -48,12 +40,41 @@
     transition: all .35s ease-in-out;
 }
 
-.navbar a:hover{
+.navbarActive a:hover{
     color: whitesmoke;
 }
 
 
-.navbar h4:last-child a{
+.navbarActive h4:last-child a{
+    color: lightskyblue;
+}
+
+.navbarInactive{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbarInactive a{
+    text-decoration: none;
+    color: #ffffff80;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+    transition: all .35s ease-in-out;
+}
+
+.navbarInactive a:hover{
+    color: whitesmoke;
+}
+
+
+.navbarInactive h4:last-child a{
     color: lightskyblue;
 }
 
@@ -98,39 +119,19 @@
 }
 
 @media (max-width: 700px){
-    .navbar{
-        background: #25252588;
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        overflow: hidden;
-        position: fixed;
-        z-index: 2;
-        flex-wrap: wrap;
-    }
-
-    .navbar a{
-        text-decoration: none;
-        color: #ffffff80;
-        text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        text-transform: lowercase;
-        font-size: 1rem;
-        transition: all .35s ease-in-out;
-        margin-right: 10px;
-    }
-
-    .navbar a:hover{
-        color: whitesmoke;
-    }
-
-
     .imagesContainer{
         display: block;
         background: none;
+    }
+
+    .pageTitleActive{
+        color: whitesmoke;
+        display: flex;
+    }
+
+    .pageTitleInactive{
+        color: whitesmoke;
+        display: flex;
     }
 
     /* Left list images */
@@ -165,6 +166,53 @@
         height: 100%;
         background: green;
     }
+    .navbarActive{
+        display: none;
+    }
+
+
+    .navbarInactive{
+        position: fixed;
+        top: 4.1rem;
+        right: 10px;
+        width: 20%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: #252525aa;
+        align-items: flex-end;
+        border-left: 1px solid #f5f5f588;
+        border-radius: 50px 0 0 50px;
+        transition: 350ms ease-in-out;
+    }
+
+    .navbarInactive a{
+        text-decoration: none;
+        color: #ffffff80;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+        text-transform: lowercase;
+        font-size: 1.1rem;
+        transition: 350ms ease-in-out;
+    }
+
+    .navbarInactive a:hover{
+        color: whitesmoke;
+    }
+
+    .navbarInactive li{
+        margin-bottom: 1rem;
+    }
+
+    .navbarInactive li a:hover,
+    .navbarInactive li a:focus{
+        transform: translate(0px, 0);
+        filter: blur(0px);
+        margin: 0 10px;
+    }
+
     
 }
 

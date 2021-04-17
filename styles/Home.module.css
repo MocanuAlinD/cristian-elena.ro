@@ -96,6 +96,12 @@
   margin: 0 10px;
 }
 
+.menuListInactive li a:hover{
+  filter: blur(0px);
+  opacity: 1;
+  margin: 0 10px;
+}
+
 .bottom_div {
   background: #124559;
   background: none;

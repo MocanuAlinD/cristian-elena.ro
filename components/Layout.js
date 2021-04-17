@@ -4,6 +4,7 @@ import {useState, Component} from 'react'
 
 
 const Layout = ({ children, home}) => {
+    console.log(children)
     return (
         <div className={styles.containerMare}>
             <NavbarPages />
