@@ -51,8 +51,8 @@ class Navbar extends Component {
                             <Link href='./landscape'><a>landscape</a></Link>
                         </li>
                     </ul>
-                    <Burger data={{ active: this.state.active, changeActive: this.changeActive.bind(this) }}/>
                 </div>
+                <Burger data={{ active: this.state.active, changeActive: this.changeActive.bind(this) }}/>
             </div>
         );
     }

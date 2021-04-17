@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  overflow: hidden;
   background-image: url('../public/bg/bg12.jpg');
   background-position-x: center;
   background-position-y: center;
@@ -10,16 +9,19 @@
   background-repeat: no-repeat;
   background-origin: content-box;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* tot meniul de sus, title si navbar */
 .entireMenu{
-  height: fit-content;
+  height: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  /* background: red; */
+  overflow: hidden;
 }
 
 .brandTitle{
@@ -45,7 +47,7 @@
   margin-top: -18px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: none;
+  display: flex;
 }
 
 .menuListInactive li a{
@@ -166,6 +168,7 @@
   .title{
     display: none;
   }
+  
 
   .entireMenu{
     position: absolute;
@@ -196,7 +199,7 @@
 
   /* nav bar burger in jos*/
   .menuListActive{
-    position: absolute;
+    position: fixed;
     top: 4.1rem;
     right: -70%;
     width: fit-content;
@@ -210,10 +213,9 @@
     border-radius: 50px 0 0 50px;
     transition: all 350ms ease-in-out;
   }
-
+  
   .menuListInactive{
-    /* display: none; */
-    position: absolute;
+    position: fixed;
     top: 4.1rem;
     right: -10px;
     width: fit-content;
