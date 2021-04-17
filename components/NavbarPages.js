@@ -18,7 +18,7 @@ class NavbarPages extends Component {
     render() {
         return (
             <div className={styles.entireNavbar}>
-                <h3 className={this.state.active ? styles.pageTitleActive : styles.pageTitleInactive}>Page Title</h3>
+                <h3 className={this.state.active ? styles.pageTitleActive : styles.pageTitleInactive}>{this.props.title}</h3>
                 <div className={this.state.active ? styles.navbarActive : styles.navbarInactive}>
                     <h4><Link href="./portraits"><a>portraits</a></Link></h4>
                     <h4><Link href="./kids"><a>kids</a></Link></h4>

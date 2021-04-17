@@ -6,9 +6,10 @@ import Layout from '../components/Layout'
 
 const Preborn = (props) => {
     const { preborn } = props
+    const titlePage = 'Preborn'
     return (
         <Layout home>
-            <ListImages img={preborn} />
+            <ListImages img={preborn} title={titlePage} />
         </Layout>
     );
 }

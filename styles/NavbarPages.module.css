@@ -13,11 +13,13 @@
 .pageTitleActive{
     color: whitesmoke;
     display: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .pageTitleInactive{
     color: whitesmoke;
     display: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbarActive{
@@ -124,14 +126,13 @@
         background: none;
     }
 
+    .pageTitleInactive,
     .pageTitleActive{
-        color: whitesmoke;
+        color: #ffffff88;
         display: flex;
-    }
-
-    .pageTitleInactive{
-        color: whitesmoke;
-        display: flex;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        letter-spacing: 5px;
     }
 
     /* Left list images */

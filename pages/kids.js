@@ -6,9 +6,10 @@ import Layout from '../components/Layout'
 
 const Kids = (props) => {
     const { kids } = props
+    const titlePage = 'Kids'
     return (
         <Layout home>
-            <ListImages img={kids} />
+            <ListImages img={kids} title={titlePage} />
         </Layout>
     );
 }
