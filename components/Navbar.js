@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 class Navbar extends Component {
     constructor(props){
         super(props)
-        this.state = { active: true }
+        this.state = { active: false }
     }
     changeActive(item) {
         this.setState({ active: item })
@@ -23,7 +23,8 @@ class Navbar extends Component {
                     <h4>cristian-elena.ro</h4>
                 </div>
                 <div>
-                    <ul className={this.state.active ? styles.menuListInactive : styles.menuListActive}>
+                    {/* <ul className={this.state.active ? styles.menuListInactive : styles.menuListActive}> */}
+                    <ul className={this.state.active ? styles.menuList: styles.menuListInactive}>
                         <li>
                             <Link href='./portraits'><a>portraits</a></Link>
                         </li>

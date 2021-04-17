@@ -2,62 +2,72 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 50px;
+    height: 3rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #252525aa;
     z-index: 2;
+    /* background: red; */
 }
 
-.pageTitleActive{
-    color: whitesmoke;
+.pageTitle{
+    /* color: whitesmoke; */
     display: none;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
-.pageTitleInactive{
-    color: whitesmoke;
-    display: none;
-    font-family: 'Poppins', sans-serif;
-}
-
-.navbarActive{
+.totMeniuSus{
     width: 100%;
-    height: 100%;
+    /* background: blue; */
+    height: fit-content;
+}
+
+.navbar{
+    width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    /* background: red; */
+}
+.navbar li{
+    list-style: none;
 }
 
-.navbarActive a{
+.navbar a{
     text-decoration: none;
     color: #ffffff80;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     text-transform: lowercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all .35s ease-in-out;
+    /* background: blue; */
 }
 
-.navbarActive a:hover{
+.navbar a:hover{
     color: whitesmoke;
 }
 
 
-.navbarActive h4:last-child a{
+.navbar li:last-child a{
     color: lightskyblue;
 }
 
+/* ======================================= */
+
 .navbarInactive{
+    list-style: none;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    /* background: red; */
 }
 
 .navbarInactive a{
@@ -67,18 +77,23 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     text-transform: lowercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all .35s ease-in-out;
+    /* background: blue; */
 }
 
-.navbarInactive a:hover{
+.navbarInactive li a:hover{
     color: whitesmoke;
 }
 
 
-.navbarInactive h4:last-child a{
+.navbarInactive li:last-child a{
     color: lightskyblue;
 }
+
+
+/* ================================================ */
+
 
 .imagesContainer{
     display: flex;
@@ -120,19 +135,30 @@
     height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 700px){
     .imagesContainer{
         display: block;
         background: none;
     }
 
-    .pageTitleInactive,
-    .pageTitleActive{
-        color: #ffffff88;
+    .pageTitle{
         display: flex;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        letter-spacing: 5px;
+        color: whitesmoke;
     }
 
     /* Left list images */
@@ -167,54 +193,89 @@
         height: 100%;
         background: green;
     }
-    .navbarActive{
-        display: none;
-    }
 
-
-    .navbarInactive{
-        position: fixed;
-        top: 4.1rem;
-        right: 10px;
-        width: 20%;
-        height: fit-content;
+    .navbar{
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        width: fit-content;
+        height: 25rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        background: #252525aa;
+        justify-content: space-around;
         align-items: flex-end;
-        border-left: 1px solid #f5f5f588;
         border-radius: 50px 0 0 50px;
-        transition: 350ms ease-in-out;
+        border-left: 2px solid black;
+        transition: margin-right 350ms ease-in-out;
+        background: #25252588;
+        background: red;
     }
 
-    .navbarInactive a{
-        text-decoration: none;
-        color: #ffffff80;
-        text-transform: uppercase;
+    .navbar li a{
+        color: whitesmoke;
+        padding: 3px 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 350ms ease-in-out;
         font-family: 'Poppins', sans-serif;
-        font-weight: 100;
-        text-transform: lowercase;
+        font-weight: 200;
+        filter: blur(0px);
+        letter-spacing: 2px;
         font-size: 1.1rem;
-        transition: 350ms ease-in-out;
+    }
+
+    .navbar a:hover{
+        color: whitesmoke;
+    }
+
+
+    .navbar h4:last-child a{
+        color: lightskyblue;
+    }
+
+    /* ======================================= */
+
+    .navbarInactive{
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        width: fit-content;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        border-radius: 50px 0 0 50px;
+        border-left: 2px solid black;
+        transition: margin-right 350ms ease-in-out;
+        list-style: none;
+        background: #25252588;
+        background: blue;
+    }
+
+    .navbarInactive li a{
+        color: whitesmoke;
+        padding: 3px 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 350ms ease-in-out;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        filter: blur(0px);
+        letter-spacing: 2px;
+        font-size: 1.1rem;
     }
 
     .navbarInactive a:hover{
         color: whitesmoke;
     }
 
-    .navbarInactive li{
-        margin-bottom: 1rem;
-    }
 
-    .navbarInactive li a:hover,
-    .navbarInactive li a:focus{
-        transform: translate(0px, 0);
-        filter: blur(0px);
-        margin: 0 10px;
+    .navbarInactive h4:last-child a{
+        color: lightskyblue;
     }
-
-    
 }
 
 
