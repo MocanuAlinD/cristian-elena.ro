@@ -23,7 +23,7 @@ class Navbar extends Component {
                     <h4>cristian-elena.ro</h4>
                 </div>
                 <div>
-                    <ul className={this.state.active ? styles.menuListActive : styles.menuListInactive}>
+                    <ul className={this.state.active ? styles.menuListInactive : styles.menuListActive}>
                         <li>
                             <Link href='./portraits'><a>portraits</a></Link>
                         </li>

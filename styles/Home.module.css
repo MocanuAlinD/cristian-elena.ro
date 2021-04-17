@@ -52,7 +52,7 @@
 
 .menuListInactive li a{
   color: whitesmoke;
-  padding: 3px 9px;
+  padding: 3px 10px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -90,17 +90,13 @@
   font-size: 1.3rem;
 }
 
-.menuListActive li a:hover{
-  filter: blur(0px);
-  opacity: 1;
-  margin: 0 10px;
-}
-
+.menuListActive li a:hover,
 .menuListInactive li a:hover{
   filter: blur(0px);
   opacity: 1;
   margin: 0 10px;
 }
+
 
 .bottom_div {
   background: #124559;
@@ -170,6 +166,18 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* ================================================================================== */
+
 @media (max-width: 700px){
   .title{
     display: none;
@@ -199,35 +207,21 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     height: fit-content;
-    /* background: violet; */
     margin: auto 20px 0px;
     letter-spacing: 0;
     width: fit-content;
   }
 
-  /* nav bar burger in jos*/
   .menuListActive{
-    position: fixed;
-    top: 4.1rem;
-    right: -70%;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: #252525aa;
-    align-items: flex-end;
-    border-left: 1px solid #f5f5f588;
-    border-radius: 50px 0 0 50px;
-    transition: all 350ms ease-in-out;
+    display: none;
   }
-  
+
   .menuListInactive{
     position: fixed;
     top: 4.1rem;
     right: -10px;
     width: fit-content;
-    height: fit-content;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -238,19 +232,6 @@
     transition: all 350ms ease-in-out;
   }
 
-  .menuListActive li,
-  .menuListInactive li{
-    margin-bottom: 1rem;
-  }
-
-  .menuListActive li a:hover,
-  .menuListInactive li a:hover,
-  .menuListActive li a:focus,
-  .menuListInactive li a:focus{
-    transform: translate(0px, 0);
-    filter: blur(0px);
-    margin: 0 10px;
-  }
 }
 
 
