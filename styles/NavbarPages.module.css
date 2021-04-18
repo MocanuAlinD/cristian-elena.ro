@@ -2,72 +2,73 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 3rem;
+    height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #252525aa;
     z-index: 2;
-    /* background: red; */
 }
 
-.pageTitle{
-    /* color: whitesmoke; */
+.pageTitleActive{
+    color: whitesmoke;
     display: none;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
 
-.totMeniuSus{
-    width: 100%;
-    /* background: blue; */
-    height: fit-content;
+.pageTitleInactive{
+    color: whitesmoke;
+    display: none;
+    font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
+
+
+
+/* =============================================================================== */
+
+.navbarActive{
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /* background: red; */
 }
-.navbar li{
+.navbarActive li{
     list-style: none;
 }
 
-.navbar a{
+.navbarActive a{
     text-decoration: none;
     color: #ffffff80;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     text-transform: lowercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all .35s ease-in-out;
-    /* background: blue; */
 }
 
-.navbar a:hover{
+.navbarActive a:hover{
     color: whitesmoke;
 }
 
 
-.navbar li:last-child a{
+.navbarActive li:last-child a{
     color: lightskyblue;
 }
 
-/* ======================================= */
+
+/* =============================================================================== */
 
 .navbarInactive{
-    list-style: none;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /* background: red; */
 }
 
 .navbarInactive a{
@@ -77,22 +78,20 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     text-transform: lowercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all .35s ease-in-out;
-    /* background: blue; */
 }
 
-.navbarInactive li a:hover{
+.navbarInactive a:hover{
     color: whitesmoke;
 }
 
 
-.navbarInactive li:last-child a{
+.navbarInactive h4:last-child a{
     color: lightskyblue;
 }
 
-
-/* ================================================ */
+/* =============================================================================== */
 
 
 .imagesContainer{
@@ -149,21 +148,24 @@
 
 
 
-
 @media (max-width: 700px){
     .imagesContainer{
         display: block;
         background: none;
     }
 
-    .pageTitle{
+    .pageTitleInactive,
+    .pageTitleActive{
+        color: #ffffff88;
         display: flex;
-        color: whitesmoke;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        letter-spacing: 5px;
     }
 
     /* Left list images */
     .inside{
-        margin-top: 7rem;
+        margin-top: 3rem;
         width: 100%;
         height: 100%;
         max-width: none;
@@ -177,7 +179,9 @@
         cursor: unset;
         margin: 5px auto;
         transition: .35s ease-in-out;
-        background: none;
+        background: whitesmoke;
+        margin-bottom: .7rem;
+        border: 1px solid white;
     }
 
     .separateImage:hover{
@@ -194,88 +198,68 @@
         background: green;
     }
 
-    .navbar{
-        position: absolute;
-        top: 2rem;
-        right: 0;
-        width: fit-content;
-        height: 25rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-end;
-        border-radius: 50px 0 0 50px;
-        border-left: 2px solid black;
-        transition: margin-right 350ms ease-in-out;
-        background: #25252588;
-        background: red;
+
+
+
+    .navbarActive{
+        display: none;
     }
 
-    .navbar li a{
-        color: whitesmoke;
-        padding: 3px 10px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        transition: all 350ms ease-in-out;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        filter: blur(0px);
-        letter-spacing: 2px;
-        font-size: 1.1rem;
-    }
-
-    .navbar a:hover{
-        color: whitesmoke;
-    }
-
-
-    .navbar h4:last-child a{
-        color: lightskyblue;
-    }
-
-    /* ======================================= */
 
     .navbarInactive{
-        position: absolute;
-        top: 2rem;
+        position: fixed;
+        top: 2.1rem;
         right: 0;
         width: fit-content;
-        height: 25rem;
+        height: 28rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        background: #252525aa;
         align-items: flex-end;
+        border-left: 1px solid #f5f5f588;
         border-radius: 50px 0 0 50px;
-        border-left: 2px solid black;
-        transition: margin-right 350ms ease-in-out;
+        transition: 350ms ease-in-out;
+        /* background: green; */
+    }
+
+    .navbarInactive li{
         list-style: none;
-        background: #25252588;
-        background: blue;
     }
 
     .navbarInactive li a{
-        color: whitesmoke;
-        padding: 3px 10px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        transition: all 350ms ease-in-out;
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
         font-family: 'Poppins', sans-serif;
         font-weight: 200;
-        filter: blur(0px);
+        text-transform: lowercase;
         letter-spacing: 2px;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        transition: 350ms ease-in-out;
+        filter: blur(0);
+        margin-right: 12px;
     }
 
     .navbarInactive a:hover{
         color: whitesmoke;
     }
-
-
-    .navbarInactive h4:last-child a{
+    .navbarInactive li:last-child a{
         color: lightskyblue;
     }
+
+    /* .navbarInactive li{
+        margin-bottom: 1rem;
+    } */
+
+    /* .navbarInactive li a:hover,
+    .navbarInactive li a:focus{
+        transform: translate(0px, 0);
+        filter: blur(0px);
+        margin-right: 12px;
+    } */
+
+    
 }
 
 

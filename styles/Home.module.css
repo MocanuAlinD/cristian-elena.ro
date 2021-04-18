@@ -39,40 +39,6 @@
   margin-top: 41px;
 }
 
-.menuList{
-  list-style: none;
-  height: fit-content;
-  width: fit-content;
-  margin-right: 11px;
-  margin-top: -18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* background: red; */
-}
-
-.menuList li a{
-  color: whitesmoke;
-  padding: 3px 10px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 350ms ease-in-out;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200;
-  filter: blur(1px);
-  letter-spacing: 2px;
-  font-size: 1.3rem;
-}
-
-.menuList li a:hover{
-  filter: blur(0px);
-  opacity: 1;
-  margin: 0 10px;
-}
-
-/* ========================================= */
-
 .menuListInactive{
   list-style: none;
   height: fit-content;
@@ -82,7 +48,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* background: red; */
 }
 
 .menuListInactive li a{
@@ -99,17 +64,38 @@
   font-size: 1.3rem;
 }
 
+/* ul */
+.menuListActive{
+  list-style: none;
+  height: fit-content;
+  width: fit-content;
+  margin-right: 11px;
+  margin-top: -18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuListActive li a{
+  color: whitesmoke;
+  padding: 3px 9px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  filter: blur(1px);
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+
+.menuListActive li a:hover,
 .menuListInactive li a:hover{
   filter: blur(0px);
   opacity: 1;
   margin: 0 10px;
 }
-
-
-
-
-/* ========================================= */
-
 
 
 .bottom_div {
@@ -159,6 +145,30 @@
  }
 
 
+.toggleButton{
+  position: absolute;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+
+.toggleButton div{
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  transition: 500ms ease-in-out;
+}
+
+
+
+
+
 
 
 
@@ -169,6 +179,10 @@
 /* ================================================================================== */
 
 @media (max-width: 700px){
+  .title{
+    display: none;
+  }
+  
 
   .entireMenu{
     position: absolute;
@@ -177,20 +191,14 @@
     width: 100%;
     height: fit-content;
     display: flex;
-    flex-wrap: wrap;
-    /* background: green; */
-  }
-
-  .title{
-    display: none;
+    /* background: red; */
   }
 
   .brandTitle{
     display: flex;
-    width: fit-content;
+    height: fit-content;
     height: fit-content;
     width: 100%;
-    /* background: violet; */
   }
 
   .brandTitle h4{
@@ -204,87 +212,25 @@
     width: fit-content;
   }
 
-  .menuList{
-    list-style: none;
-    height: 22rem;
-    width: fit-content;
-    margin-right: 0;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    background: #25252588;
-    border-radius: 50px 0 0 50px;
-    border-left: 2px solid black;
-    transition: margin-right 350ms ease-in-out;
+  .menuListActive{
+    display: none;
   }
-
-  .menuList li a{
-    color: whitesmoke;
-    padding: 3px 10px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 350ms ease-in-out;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    filter: blur(0px);
-    letter-spacing: 2px;
-    font-size: 1.1rem;
-    /* background: red; */
-  }
-
-  .menuList li a:hover{
-    filter: blur(0px);
-    opacity: 1;
-    margin: 0 0px;
-  }
-
-  /* ========================================= */
 
   .menuListInactive{
-    list-style: none;
-    height: 22rem;
+    position: fixed;
+    top: 4.1rem;
+    right: -10px;
     width: fit-content;
-    margin-right: -22rem;
-    margin-top: 0;
+    height: 25rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background: #252525aa;
     align-items: flex-end;
-    background: #25252588;
+    border-left: 1px solid #f5f5f588;
     border-radius: 50px 0 0 50px;
-    border-left: 2px solid black;
-    transition: margin-right 350ms ease-in-out;
-  }
-
-  .menuListInactive li a{
-    color: whitesmoke;
-    padding: 3px 10px;
-    border: none;
-    outline: none;
-    cursor: pointer;
     transition: all 350ms ease-in-out;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    filter: blur(0px);
-    letter-spacing: 2px;
-    font-size: 1.1rem;
-    /* background: blue; */
   }
-
-  .menuListInactive li a:hover{
-    filter: blur(0px);
-    opacity: 1;
-    margin: 0 0px;
-  }
-  
-
-
-
-
-/* ========================================= */
 
 }
 
