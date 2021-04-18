@@ -25,25 +25,25 @@ class Navbar extends Component {
                 <div>
                     <ul className={this.state.active ? styles.menuListInactive : styles.menuListActive}>
                         <li>
-                            <Link href='./portraits'><a>portraits</a></Link>
+                            <Link href='/portraits'><a>portraits</a></Link>
                         </li>
                         <li>
-                            <Link href='./kids'><a>kids</a></Link>
+                            <Link href='/kids'><a>kids</a></Link>
                         </li>
                         <li>
-                            <Link href='./preborn'><a>preborn</a></Link>
+                            <Link href='/preborn'><a>preborn</a></Link>
                         </li>
                         <li>
-                            <Link href='./newborn'><a>newborn</a></Link>
+                            <Link href='/newborn'><a>newborn</a></Link>
                         </li>
                         <li>
-                            <Link href='./food'><a>food</a></Link>
+                            <Link href='/food'><a>food</a></Link>
                         </li>
                         <li>
-                            <Link href='./city'><a>city</a></Link>
+                            <Link href='/city'><a>city</a></Link>
                         </li>
                         <li>
-                            <Link href='./landscape'><a>landscape</a></Link>
+                            <Link href='/landscape'><a>landscape</a></Link>
                         </li>
                     </ul>
                 </div>
