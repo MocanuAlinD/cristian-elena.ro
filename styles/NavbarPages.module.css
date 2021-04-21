@@ -180,16 +180,14 @@
         margin: 5px auto;
         transition: .35s ease-in-out;
         background: whitesmoke;
-        margin-bottom: .7rem;
         border: 1px solid white;
     }
-
+    
     .separateImage:hover{
-        background: none;
-        margin-bottom: 0;
+        background: whitesmoke;
+        margin-bottom: 5px;
         transform: translateX(0px);
     }
-
 
     .bigImage{
         display: none;
@@ -198,13 +196,9 @@
         background: green;
     }
 
-
-
-
     .navbarActive{
         display: none;
     }
-
 
     .navbarInactive{
         position: fixed;
