@@ -2,7 +2,7 @@ module.exports = {
   images: {
     loader: "imgix",
     // path: 'http://localhost:3000/',
-    path: "https://cristian-elena-ro2.vercel.app",
+    path: "https://cristian-elena.vercel.app",
   },
   trailingSlash: true,
 };
